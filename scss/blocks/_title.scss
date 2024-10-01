@@ -1,0 +1,63 @@
+.title {
+	font-weight: 400;
+	font-size: 0.729vw; //14px
+	color: #D4D4D4;
+	&_12 {
+		font-size: 0.625vw;
+	}
+	&_15 {
+		font-size: 0.781vw;
+	}
+	&_16 {
+		font-size: 0.833vw;
+	}
+	&_20 {
+		font-size: 1.041vw;
+	}
+	&_24 {
+		font-size: 1.25vw;
+	}
+	&_28 {
+		font-size: 1.458vw;
+	}
+	&_30 {
+		font-size: 1.562vw;
+	}
+	&_31 {
+		font-size: 1.614vw;
+	}
+	&_32 {
+		font-size: 1.666vw;
+	}
+	&_38 {
+		font-size: 1.979vw;
+	}
+	&_40 {
+		font-size: 2.083vw;
+	}
+	&_46 {
+		font-size: 2.395vw;
+	}
+	&_61 {
+		font-size: 3.177vw;
+	}
+}
+.regular {
+	font-weight: 400;
+}
+.medium {
+	font-weight: 500;
+}
+.upper {
+	text-transform: uppercase;
+}
+.under {
+	text-decoration: underline;
+}
+.pale {
+	color: #939393;
+}
+
+.roboto {
+	font-family: "Roboto", sans-serif;
+}
