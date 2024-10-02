@@ -43,6 +43,23 @@
         padding: 0.52vw;
         border-radius: 0.416vw;
         background: #323232;
+        .values {
+            .workload {
+                display: flex;
+                flex-direction: column-reverse;
+                gap: 0.156vw;
+                width: calc(6.25vw - 0.416vw * 2 - 0.052vw * 2) ;
+                height: calc(24.739vw - 0.416vw * 2 - 0.052vw * 2);
+                padding: 0.416vw;
+                border: 0.052vw solid rgba(255, 255, 255, 0.2);
+                border-radius: 0.416vw;
+                background: #282828;
+                div {
+                    border-radius: 0.104vw;
+                    height: 2.031vw;
+                }
+            }
+        }
         .locations {
             position: relative;
             overflow: hidden;
