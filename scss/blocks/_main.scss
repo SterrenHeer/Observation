@@ -39,7 +39,7 @@
         display: flex;
         justify-content: space-between;
         width: calc(49.736% - 0.52vw * 2);
-        min-height: calc(25.781vw - 0.52vw * 2);
+        height: calc(25.781vw - 0.52vw * 2);
         padding: 0.52vw;
         border-radius: 0.416vw;
         background: #323232;
@@ -131,6 +131,9 @@
                 border-radius: 0.208vw;
                 background: #282828;
                 cursor: pointer;
+                &:hover {
+                    background: #333333;
+                }
                 img {
                     height: 0.833vw;
                 }
@@ -176,5 +179,79 @@
                 }
             }
         }
+        .video {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            video {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: fill;
+                border-radius: 0.416vw;
+            }
+            .top {
+                position: absolute;
+                top: 0.52vw;
+                left: 0.52vw;
+                z-index: 1;
+                display: flex;
+                justify-content: space-between;
+                width: calc(100% - 0.52vw * 2);
+                .labels {
+                    display: flex;
+                    gap: 1.25vw;
+                }
+                .label, .target {
+                    display: flex;
+                    align-items: center;
+                    gap: 0.421vw;
+                    padding: 0.312vw 0.416vw;
+                    border: 0.052vw solid rgba(255, 255, 255, 0.2);
+                    border-radius: 0.208vw;
+                    background: #282828;
+                    img {
+                        width: 1.041vw;
+                    }
+                }
+                .target {
+                    padding: 0.312vw;
+                    cursor: pointer;
+                    img {
+                        width: 1.25vw;
+                    }
+                }
+            }
+            .buttons {
+                position: absolute;
+                bottom: 0.52vw;
+                left: 0.52vw;
+                display: flex;
+                gap: 0.312vw;
+                button {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 0.312vw 0.416vw;
+                    border: 0.052vw solid rgba(255, 255, 255, 0.2);
+                    border-radius: 0.208vw;
+                    background: #282828;
+                    cursor: pointer;
+                    &:hover {
+                        background: #333333;
+                    }
+                }
+                .active {
+                    border: 0.052vw solid rgba(255, 255, 255, 0.4);
+                    background: #3068f9;
+                    color: #fff;
+                }
+            }
+        }
+    }
+    .for_video {
+        width: 49.736%;
+        height: 25.781vw;
+        padding: 0;
     }
 }
