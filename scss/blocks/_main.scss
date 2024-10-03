@@ -248,6 +248,47 @@
                 }
             }
         }
+        .notifications {
+            display: flex;
+            padding: 0.312vw;
+            .display {
+                width: 31.25vw;
+                .top {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    img {
+                        width: 1.25vw;
+                    }
+                    .left {
+                        display: flex;
+                        align-items: center;
+                        gap: 0.416vw;
+                    }
+                }
+                & > img {
+                    margin-top: 0.989vw;
+                    width: calc(100% - 0.052vw * 2);
+                    height: calc(17.291vw - 0.052vw * 2);
+                    border: 0.052vw solid rgba(255, 255, 255, 0.2);
+                    border-radius: 0.416vw;
+                }
+                .bottom {
+                    margin-top: 0.416vw;
+                    padding: 0.729vw 0.833vw;
+                    border-radius: 0.416vw;
+                    background: #282828;
+                    .time {
+                        display: flex;
+                        align-items: center;
+                        gap: 0.416vw;
+                    }
+                    .title_20 {
+                        margin-top: 0.52vw;
+                    }
+                }
+            }
+        }
     }
     .for_video {
         width: 49.736%;
