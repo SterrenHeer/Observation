@@ -36,3 +36,30 @@ for (let i = 1; i <= 11; i++) {
     }
     workload.append(div);
 }
+
+let dots = document.querySelectorAll('.locations_wrapper .marker, .video .buttons button');
+let len = dots.length / 2
+
+dots.forEach((dot, index) => {
+    dot.addEventListener('click', (e) => {
+        dots.forEach(dot => dot.classList.remove('active'));
+        dot.classList.add('active');
+        if (dot.classList.contains('marker')) {
+            dots[index + len].classList.add('active')
+        } else {
+            dots[index - len].classList.add('active')
+        }
+    });
+});
+
+function changeNotActivity(not) {
+    not.forEach(dot => {
+        dot.addEventListener('click', (e) => {
+            not.forEach(dot => dot.classList.remove('active'));
+            dot.classList.add('active');
+        });
+    });
+}
+
+changeNotActivity(document.querySelectorAll('.history.first .wrapper .item'))
+changeNotActivity(document.querySelectorAll('.history.second .wrapper .item'))

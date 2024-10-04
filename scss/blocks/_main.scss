@@ -18,6 +18,10 @@
             border-radius: 0.312vw;
             background: #323232;
             cursor: pointer;
+            &:hover {
+                background: #353535;
+                
+            }
             img {
                 width: 1.041vw;
                 height: 1.041vw;
@@ -27,6 +31,9 @@
             padding: 0.312vw 1.041vw 0.416vw 1.041vw;
             background: #a9262e;
             color: #fff;
+            &:hover {
+                background: rgba(#a9262e, 0.6);
+            }
         }
     }
     &_wrapper {
@@ -167,8 +174,12 @@
                 border-radius: 2.083vw;
                 background: #282828;
                 cursor: pointer;
+                &:hover {
+                    background: #353535;
+                }
                 * {
                     text-align: center;
+                    user-select: none;
                 }
             }
             .active {
@@ -176,6 +187,9 @@
                 background: #3068f9;
                 * {
                     color: #fff;
+                }
+                &:hover {
+                    background: #3068f9;
                 }
             }
         }
@@ -261,11 +275,15 @@
                     align-items: center;
                     img {
                         width: 1.25vw;
+                        cursor: pointer;
                     }
                     .left {
                         display: flex;
                         align-items: center;
                         gap: 0.416vw;
+                        img {
+                            cursor: default;
+                        }
                     }
                 }
                 & > img {
