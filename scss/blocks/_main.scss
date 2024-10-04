@@ -250,6 +250,8 @@
         }
         .notifications {
             display: flex;
+            justify-content: space-between;
+            width: calc(100% - 0.312vw * 2);
             padding: 0.312vw;
             .display {
                 width: 31.25vw;
@@ -274,7 +276,7 @@
                     border-radius: 0.416vw;
                 }
                 .bottom {
-                    margin-top: 0.416vw;
+                    margin-top: 0.156vw;
                     padding: 0.729vw 0.833vw;
                     border-radius: 0.416vw;
                     background: #282828;
@@ -285,6 +287,99 @@
                     }
                     .title_20 {
                         margin-top: 0.52vw;
+                    }
+                }
+            }
+            .history {
+                width: calc(15.468vw - 0.208vw - 0.52vw);
+                padding: 0.52vw 0.208vw 0.208vw 0.52vw;
+                border-radius: 0.208vw;
+                background: #282828;
+                .top {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    & > div {
+                        display: flex;
+                        align-items: center;
+                    }
+                    .left {
+                        gap: 0.312vw;
+                        img {
+                            width: 1.041vw;
+                        }
+                    }
+                    .right {
+                        gap: 0.26vw;
+                        padding-right: 0.52vw;
+                        cursor: pointer;
+                        img {
+                            width: 0.260vw;
+                        }
+                        .title:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+                .wrapper {
+                    overflow-y: scroll;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.208vw;
+                    margin-top: 0.625vw;
+                    padding-right: 0.312vw;
+                    height: 21.718vw;
+                    &::-webkit-scrollbar {
+                        width: 1.093vw;
+                        border-radius: 0.104vw;
+                        background-color: #2f2f2f;
+                    }
+                    &::-webkit-scrollbar-thumb {
+                        width: 0.781vw;
+                        border: 0.208vw solid transparent;
+                        border-radius: 0.104vw;
+                        background-color: #616161;
+                        background-clip: content-box;
+                    }
+                    &::-webkit-scrollbar-track {
+                        border-radius: 0.104vw;
+                        background: #2f2f2f;
+                    }
+                    &::-webkit-scrollbar-button:start:decrement {
+                        background: no-repeat center / 0.52vw url(../icons/scroll_up.svg) #2f2f2f;  
+                    }
+                    &::-webkit-scrollbar-button:end:increment {
+                        background: no-repeat center / 0.52vw url(../icons/scroll_down.svg) #2f2f2f;
+                    }
+                    .item {
+                        padding: 0.416vw;
+                        border: 0.052vw solid rgba(255, 255, 255, 0.2);
+                        border-radius: 0.208vw;
+                        background: #2f2f2f;
+                        &:hover {
+                            background: #353535;
+                        }
+                        .time {
+                            display: flex;
+                            align-items: center;
+                            gap: 0.416vw;
+                        }
+                        .title_15 {
+                            margin-top: 0.312vw;
+                        }
+                        .alert {
+                            display: flex;
+                            align-items: center;
+                            gap: 0.312vw;
+                            img {
+                                width: 0.572vw;
+                                height: 0.625vw;
+                            }
+                        }
+                    }
+                    .active {
+                        border: 0.052vw solid rgba(255, 255, 255, 0.6);
+                        background: #353535;
                     }
                 }
             }
