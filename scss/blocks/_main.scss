@@ -45,8 +45,8 @@
     &_section {
         display: flex;
         justify-content: space-between;
-        width: calc(49.736% - 0.52vw * 2);
-        height: calc(25.781vw - 0.52vw * 2);
+        width: calc(49.736% - 0.525vw * 2);
+        height: calc(25.781vw - 0.525vw * 2);
         padding: 0.52vw;
         border-radius: 0.416vw;
         background: #323232;
@@ -64,9 +64,18 @@
                     justify-content: space-between;
                     align-items: flex-start;
                     padding: 0.833vw;
-                    img {
+                    svg {
                         width: 1.25vw;
+                        height: 1.25vw;
                         cursor: pointer;
+                        &:hover {
+                            fill: rgba(255, 255, 255, 0.05);
+                        }
+                        &:active {
+                            path {
+                                stroke: #D4D4D4;
+                            }
+                        }
                     }
                 }
                 .wrapper {
@@ -141,8 +150,14 @@
                 &:hover {
                     background: #333333;
                 }
-                img {
-                    height: 0.833vw;
+                &:active {
+                    .title {
+                        color: #d4d4d4;
+                    }
+                }
+                .title {
+                    text-align: center;
+                    color: #939393;
                 }
             }
             .label {
@@ -231,8 +246,18 @@
                 .target {
                     padding: 0.312vw;
                     cursor: pointer;
-                    img {
+                    svg {
                         width: 1.25vw;
+                        height: 1.25vw;
+                        cursor: pointer;
+                        &:hover {
+                            fill: rgba(255, 255, 255, 0.05);
+                        }
+                        &:active {
+                            path {
+                                stroke: #D4D4D4;
+                            }
+                        }
                     }
                 }
             }
@@ -254,11 +279,17 @@
                     &:hover {
                         background: #333333;
                     }
+                    &:active {
+                        color: #d4d4d4;
+                    }
                 }
                 .active {
                     border: 0.052vw solid rgba(255, 255, 255, 0.4);
                     background: #3068f9;
                     color: #fff;
+                    &:hover {
+                        background: #3068f9;
+                    }
                 }
             }
         }
@@ -273,9 +304,18 @@
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
-                    img {
+                    svg {
                         width: 1.25vw;
+                        height: 1.25vw;
                         cursor: pointer;
+                        &:hover {
+                            fill: rgba(255, 255, 255, 0.05);
+                        }
+                        &:active {
+                            path {
+                                stroke: #D4D4D4;
+                            }
+                        }
                     }
                     .left {
                         display: flex;
@@ -331,16 +371,25 @@
                         gap: 0.26vw;
                         padding-right: 0.52vw;
                         cursor: pointer;
+                        &:hover .title {
+                            text-decoration: underline;
+                        }
+                        &:active {
+                            img {
+                                filter: brightness(0) saturate(100%) invert(75%) sepia(92%) saturate(0%) hue-rotate(257deg) brightness(88%) contrast(112%);
+                            }
+                            .title {
+                                color: #d4d4d4;
+                            }
+                        }
                         img {
                             width: 0.260vw;
-                        }
-                        .title:hover {
-                            text-decoration: underline;
                         }
                     }
                 }
                 .wrapper {
                     overflow-y: scroll;
+                    overflow-x: hidden;
                     display: flex;
                     flex-direction: column;
                     gap: 0.208vw;
@@ -370,6 +419,7 @@
                         background: no-repeat center / 0.52vw url(../icons/scroll_down.svg) #2f2f2f;
                     }
                     .item {
+                        width: calc(100% - 0.416vw * 2);
                         padding: 0.416vw;
                         border: 0.052vw solid rgba(255, 255, 255, 0.2);
                         border-radius: 0.208vw;
