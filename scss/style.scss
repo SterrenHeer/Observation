@@ -14,3 +14,18 @@ a {
 
 @import 'blocks/title';
 @import 'blocks/main';
+@import 'blocks/values';
+@import 'blocks/locations';
+@import 'blocks/video';
+@import 'blocks/notifications';
+@import 'blocks/modal';
+
+.hide {
+	display: none;
+}
+.show {
+	display: block;
+}
+.flex {
+	display: flex;
+}

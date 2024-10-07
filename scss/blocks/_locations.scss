@@ -1,0 +1,87 @@
+.locations {
+    position: relative;
+    overflow: hidden;
+    width: calc(23.828vw - 0.052vw * 2) ;
+    height: calc(24.739vw - 0.052vw * 2);
+    border: 0.052vw solid rgba(255, 255, 255, 0.2);
+    border-radius: 0.416vw;
+    &_wrapper {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 1.927vw;
+        padding: 0.312vw 0.416vw;
+        border: 0.052vw solid rgba(255, 255, 255, 0.2);
+        border-radius: 0.208vw;
+        background: #282828;
+        cursor: pointer;
+        &:hover {
+            background: #333333;
+        }
+        &:active {
+            .title {
+                color: #d4d4d4;
+            }
+        }
+        .title {
+            text-align: center;
+            color: #939393;
+        }
+    }
+    .label {
+        position: absolute;
+        top: 0.52vw;
+        left: 0.52vw;
+        display: flex;
+        gap: 0.421vw;
+        padding: 0.312vw 0.416vw;
+        border: 0.052vw solid rgba(255, 255, 255, 0.2);
+        border-radius: 0.208vw;
+        background: #282828;
+    }
+    .buttons {
+        position: absolute;
+        bottom: 0.52vw;
+        left: 0.52vw;
+        display: flex;
+        gap: 0.312vw;
+    }
+    .marker {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 1.041vw;
+        height: 1.041vw;
+        border: 0.104vw solid #939393;
+        border-radius: 2.083vw;
+        background: #282828;
+        cursor: pointer;
+        &:hover {
+            background: #353535;
+        }
+        * {
+            text-align: center;
+            user-select: none;
+        }
+    }
+    .active {
+        border: 0.104vw solid #fff;
+        background: #3068f9;
+        * {
+            color: #fff;
+        }
+        &:hover {
+            background: #3068f9;
+        }
+    }
+}

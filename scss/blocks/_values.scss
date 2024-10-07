@@ -1,0 +1,71 @@
+.values {
+    display: flex;
+    justify-content: space-between;
+    width: 23.437vw;
+    .data {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 15.989vw;
+        .top {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 0.833vw;
+            svg {
+                width: 1.25vw;
+                height: 1.25vw;
+                cursor: pointer;
+                &:hover {
+                    fill: rgba(255, 255, 255, 0.05);
+                }
+                &:active {
+                    path {
+                        stroke: #D4D4D4;
+                    }
+                }
+            }
+        }
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 0.52vw;
+            margin-top: 0.52vw;
+            .item {
+                display: flex;
+                flex-direction: column;
+                gap: 0.416vw;
+                padding: 0.625vw 0.416vw 0.625vw 0.833vw;
+                border: 0.052vw solid rgba(255, 255, 255, 0.2);
+                border-radius: 0.416vw;
+                background: #282828;
+                .value {
+                    display: flex;
+                    align-items: center;
+                    gap: 0.416vw;
+                    img {
+                        height: 1.25vw;
+                    }
+                }
+                .rotate {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+    }
+    .workload {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 0.156vw;
+        width: calc(6.25vw - 0.416vw * 2 - 0.052vw * 2) ;
+        height: calc(24.739vw - 0.416vw * 2 - 0.052vw * 2);
+        padding: 0.416vw;
+        border: 0.052vw solid rgba(255, 255, 255, 0.2);
+        border-radius: 0.416vw;
+        background: #282828;
+        div {
+            border-radius: 0.104vw;
+            height: 2.031vw;
+        }
+    }
+}

@@ -63,3 +63,7 @@ function changeNotActivity(not) {
 
 changeNotActivity(document.querySelectorAll('.history.first .wrapper .item'))
 changeNotActivity(document.querySelectorAll('.history.second .wrapper .item'))
+
+if (document.querySelector('.h_modal') != null) {
+    modal('.h_modal', 'data-close', '.history_modal');
+}
