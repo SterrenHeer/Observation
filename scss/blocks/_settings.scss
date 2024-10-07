@@ -1,0 +1,58 @@
+.settings {
+    &_headers {
+        display: flex;
+        align-items: center;
+        gap: 0.833vw;
+        padding: 0.208vw;
+        border-radius: 0.312vw;
+        background: #282828;
+        .active {
+            background: #464646;
+            color: #fff;
+        }
+    }
+    &_header {
+        border-radius: 0.208vw;
+        padding: 0.312vw 0.833vw 0.416vw 0.833vw;
+        color: #939393;
+        cursor: pointer;
+        user-select: none;
+    }
+    &_wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 0.833vw;
+    }
+    .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        img {
+            width: 1.875vw;
+            height: 1.875vw;
+            cursor: pointer;
+            &:hover {
+                filter: brightness(70%);
+            }
+        }
+        .left {
+            display: flex;
+            align-items: center;
+            gap: 2.083vw;
+            
+        }
+        .titles {
+            display: flex;
+            align-items: center;
+            gap: 0.625vw;
+            img {
+                width: 1.875vw;
+                cursor: default;
+                &:hover {
+                    filter: none;
+                }
+            }
+        }
+    }
+}

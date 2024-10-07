@@ -67,3 +67,10 @@ changeNotActivity(document.querySelectorAll('.history.second .wrapper .item'))
 if (document.querySelector('.h_modal') != null) {
     modal('.h_modal', 'data-close', '.history_modal');
 }
+if (document.querySelector('.settings') != null) {
+    modal('[data-settings]', 'data-close', '.settings');
+}
+
+if (document.querySelector('.settings_wrapper') != null) {
+    tabs('.settings_header', '.settings_wrapper', '.settings_headers', 'active');
+}

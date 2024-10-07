@@ -14,7 +14,7 @@
 			<div class="main_header_buttons">
 				<button class="button">
 					<img src="icons/settings.svg" alt="settings">
-					<div class="title">Настройки</div>
+					<div class="title" data-settings>Настройки</div>
 				</button>
 				<button class="button red">
 					<div class="title">Выход</div>
@@ -403,9 +403,35 @@
 			</div>
 		</div>
 	</div>
+	<div class="modal settings">
+		<div class="main_section column">
+			<div class="top">
+				<div class="left">
+					<div class="titles">
+						<img src="icons/settings_grey.svg" alt="settings">
+						<div class="title title_30 medium">Настройки</div>
+					</div>
+					<div class="settings_headers">
+						<div class="settings_header title">Камеры</div>
+						<div class="settings_header title">Другое</div>
+					</div>
+				</div>
+				<img src="icons/close.svg" data-close alt="close">
+			</div>
+            <div class="settings_wrapper">
+				<div class="settings_item">
+				</div>
+			</div>
+			<div class="settings_wrapper">
+				<div class="settings_item">
+				</div>
+			</div>
+		</div>
+	</div>
 	<footer class="footer"></footer>
 	<script src="js/jquery-3.7.1.min.js"></script>
 	<script src="js/modal.js"></script>
+	<script src="js/tabs.js"></script>
 	<script src="js/script.js"></script>
 </body>
 </html>
