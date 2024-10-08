@@ -69,3 +69,46 @@
         }
     }
 }
+
+.values.full {
+    width: calc(45.625vw - 1.041vw * 2 - 0.052vw * 2);
+    padding: 1.041vw;
+    border: 0.052vw solid rgba(255, 255, 255, 0.2);
+    border-radius: 0.833vw;
+    .data {
+        width: 30.52vw;
+        .top {
+            padding: 1.666vw;
+        }
+        .wrapper {
+            gap: 1.041vw;
+            margin-top: 1.041vw;
+            .item {
+                gap: 0.833vw;
+                padding: 0.833vw 0.833vw 0.833vw 1.666vw;
+                min-height: calc(8.437vw - 0.833vw * 2);
+                border-radius: 0.833vw;
+                .value {
+                    gap: 0.781vw;
+                    img {
+                        height: 2.395vw;
+                    }
+                }
+                &:first-child {
+                    gap: 0.416vw;
+                }
+            }
+        }
+    }
+    .workload {
+        gap: 0.312vw;
+        width: calc(11.979vw - 0.833vw * 2 - 0.052vw * 2) ;
+        height: calc(47.291vw - 0.833vw * 2 - 0.052vw * 2);
+        padding: 0.833vw;
+        border-radius: 0.833vw;
+        div {
+            border-radius: 0.208vw;
+            height: 3.854vw;
+        }
+    }
+}

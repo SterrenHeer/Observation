@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Статистика</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+    <section class="main">
+		<div class="main_header">
+            <div class="left">
+                <img src="icons/statistics.svg" alt="statistics">
+			    <div class="title title_30">Общие сведения</div>
+            </div>
+            <svg class="return" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0.5" y="0.5" width="37" height="37" rx="4.5" stroke="#848484"/>
+                <path d="M17 12H14.8C13.1198 12 12.2798 12 11.638 12.327C11.0735 12.6146 10.6146 13.0735 10.327 13.638C10 14.2798 10 15.1198 10 16.8V23.2C10 24.8802 10 25.7202 10.327 26.362C10.6146 26.9265 11.0735 27.3854 11.638 27.673C12.2798 28 13.1198 28 14.8 28H21.2C22.8802 28 23.7202 28 24.362 27.673C24.9265 27.3854 25.3854 26.9265 25.673 26.362C26 25.7202 26 24.8802 26 23.2V21" stroke="#848484" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"/>
+                <path d="M20 12L20 18M20 18L26 18M20 18L28 10" stroke="#848484" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"/>
+            </svg>
+		</div>
+        <div class="main_section full">
+            <div class="values full">
+                <div class="data">
+                    <div class="top">
+                        <div>
+                            <div class="title title_61 medium">15.09.2024</div>
+                            <div class="title title_38 pale">Воскресенье</div>
+                        </div>
+                    </div>
+                    <div class="wrapper">
+                        <div class="item">
+                            <div class="value">
+                                <img src="icons/people.svg" alt="people">
+                                <div class="title title_61 medium">1367</div>
+                            </div>
+                            <div class="title title_38 pale">Всего человек на объекте</div>
+                        </div>
+                        <div class="item">
+                            <div class="value">
+                                <img src="icons/entry.svg" alt="entry">
+                                <div class="title title_46 medium">2155</div>
+                            </div>
+                            <div class="title title_30 pale">Люди прибывшие на объект</div>
+                        </div>
+                        <div class="item">
+                            <div class="value">
+                                <img src="icons/entry.svg" class="rotate" alt="entry">
+                                <div class="title title_46 medium">788</div>
+                            </div>
+                            <div class="title title_30 pale">Люди убывшие с объекта</div>
+                        </div>
+                        <div class="item">
+                            <div class="value">
+                                <img src="icons/violation.svg" alt="violation">
+                                <div class="title title_46 medium">234</div>
+                            </div>
+                            <div class="title title_30 pale">Нарушений за день</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="workload" data-workload="50"></div>
+            </div>
+            <div class="locations">
+                <div class="locations_wrapper">
+                    <img src="img/map_template.png" alt="map">
+                    <div class="marker active" data-x="10" data-y="20">
+                        <div class="titletitle_24 medium pale">1</div>
+                    </div>
+                    <div class="marker" data-x="20" data-y="60">
+                        <div class="titletitle_24 medium pale">2</div>
+                    </div>
+                    <div class="marker" data-x="70" data-y="30">
+                        <div class="titletitle_24 medium pale">3</div>
+                    </div>
+                    <div class="marker" data-x="10" data-y="70">
+                        <div class="titletitle_24 medium pale">4</div>
+                    </div>
+                    <div class="marker" data-x="60" data-y="60">
+                        <div class="titletitle_24 medium pale">5</div>
+                    </div>
+                    <div class="marker" data-x="20" data-y="20">
+                        <div class="titletitle_24 medium pale">6</div>
+                    </div>
+                    <div class="marker" data-x="40" data-y="90">
+                        <div class="titletitle_24 medium pale">7</div>
+                    </div>
+                </div>
+                <div class="label">
+                    <div class="title title_16 medium pale">Схема расположения камер на объекте</div>
+                </div>
+                <div class="buttons">
+                    <button id="plus">
+                        <div class="title medium">+</div>
+                    </button>
+                    <button id="minus">
+                        <div class="title medium">—</div>
+                    </button>
+                </div>
+            </div>
+        </div>
+	</section>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -9,6 +9,27 @@
             display: flex;
             gap: 0.833vw;
         }
+        .left {
+            display: flex;
+            align-items: center;
+            gap: 0.625vw;
+            img {
+                width: 1.875vw;
+            }
+        }
+        .return {
+            width: 1.875vw;
+            height: 1.875vw;
+            cursor: pointer;
+            &:hover {
+                fill: rgba(255, 255, 255, 0.05);
+            }
+            &:active {
+                path {
+                    stroke: #D4D4D4;
+                }
+            }
+        }
         .button {
             display: flex;
             align-items: center;
@@ -49,6 +70,12 @@
         padding: 0.52vw;
         border-radius: 0.416vw;
         background: #323232;        
+    }
+    &_section.full {
+        width: calc(100% - 1.666vw * 2);
+        height: fit-content;
+        padding: 1.666vw;
+        border-radius: 0;      
     }
     .for_video {
         width: 49.736%;
