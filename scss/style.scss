@@ -14,12 +14,12 @@ a {
 
 @import 'blocks/title';
 @import 'blocks/main';
+@import 'blocks/modal';
 @import 'blocks/values';
 @import 'blocks/locations';
 @import 'blocks/video';
 @import 'blocks/notifications';
 @import 'blocks/settings';
-@import 'blocks/modal';
 
 .hide {
 	display: none;
