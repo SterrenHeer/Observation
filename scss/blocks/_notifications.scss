@@ -255,3 +255,29 @@
         }
     }
 }
+
+.notifications.full {
+    width: 100%;
+    padding: 0;
+    .display {
+        margin-top: 1.562vw;
+        width: 65.416vw;
+        & > img {
+            margin-top: 0;
+            width: calc(100% - 0.052vw * 2);
+            height: calc(36.197vw - 0.052vw * 2);
+            border-radius: 0.833vw;
+        }
+        .bottom {
+            margin-top: 0.833vw;
+            padding: 2.708vw 1.666vw;
+            border-radius: 0.833vw;
+            .time {
+                gap: 0.833vw;
+            }
+            .title_40 {
+                margin-top: 1.041vw;
+            }
+        }
+    }
+}
