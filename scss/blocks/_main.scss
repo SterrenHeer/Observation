@@ -56,6 +56,9 @@
             }
         }
     }
+    &_header.full {
+        padding: 1.666vw 1.666vw 0;
+    }
     &_wrapper {
         display: flex;
         flex-wrap: wrap;
@@ -74,7 +77,7 @@
     &_section.full {
         width: calc(100% - 1.666vw * 2);
         height: fit-content;
-        padding: 1.666vw;
+        padding: 1.562vw 1.666vw;
         border-radius: 0;      
     }
     .for_video {

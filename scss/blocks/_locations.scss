@@ -85,3 +85,23 @@
         }
     }
 }
+
+.locations.full {
+    width: calc(47.552vw - 0.104vw * 2) ;
+    height: calc(49.375vw - 0.104vw * 2);
+    border: 0.104vw solid rgba(255, 255, 255, 0.2);
+    border-radius: 0.833vw;
+    .label {
+        top: 1.041vw;
+        left: 1.041vw;
+    }
+    .marker {
+        width: calc(2.083vw - 0.156vw * 2);
+        height: calc(2.083vw - 0.156vw * 2);
+        border: 0.156vw solid #939393;
+        border-radius: 100%;
+    }
+    .active {
+        border: 0.156vw solid #fff;
+    }
+}

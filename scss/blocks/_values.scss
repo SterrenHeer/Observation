@@ -71,6 +71,7 @@
 }
 
 .values.full {
+    align-items: flex-end;
     width: calc(45.625vw - 1.041vw * 2 - 0.052vw * 2);
     padding: 1.041vw;
     border: 0.052vw solid rgba(255, 255, 255, 0.2);
@@ -86,7 +87,7 @@
             .item {
                 gap: 0.833vw;
                 padding: 0.833vw 0.833vw 0.833vw 1.666vw;
-                min-height: calc(8.437vw - 0.833vw * 2);
+                min-height: calc(8.437vw - 0.833vw * 2 - 0.052vw * 2);
                 border-radius: 0.833vw;
                 .value {
                     gap: 0.781vw;
