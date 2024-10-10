@@ -17,28 +17,30 @@ document.querySelectorAll('.marker').forEach((marker) => {
     marker.style.left = marker.dataset.x + '%';
 });
 
-let workload = document.querySelector('.workload');
-let percentages = +workload.dataset.workload;
-let color = '';
-if (percentages <= 33) {
-    color = '#a49d1b'
-}
-else if (percentages <= 77) {
-    color= '#16821a'
-}
-else {
-    color = '#823816'
-}
-let rate = Math.round(percentages * 1.1 / 10)
-
-for (let i = 1; i <= 11; i++) {
-    let div = document.createElement('div');
-    if (i <= rate) {
-        div.style.backgroundColor = color;
-    } else {
-        div.style.backgroundColor = '#323232';
+if (document.querySelector('.workload') != null) {
+    let workload = document.querySelector('.workload');
+    let percentages = +workload.dataset.workload;
+    let color = '';
+    if (percentages <= 33) {
+        color = '#a49d1b'
     }
-    workload.append(div);
+    else if (percentages <= 77) {
+        color= '#16821a'
+    }
+    else {
+        color = '#823816'
+    }
+    let rate = Math.round(percentages * 1.1 / 10)
+
+    for (let i = 1; i <= 11; i++) {
+        let div = document.createElement('div');
+        if (i <= rate) {
+            div.style.backgroundColor = color;
+        } else {
+            div.style.backgroundColor = '#323232';
+        }
+        workload.append(div);
+    }
 }
 
 let dots = document.querySelectorAll('.locations_wrapper .marker, .video .buttons button');
