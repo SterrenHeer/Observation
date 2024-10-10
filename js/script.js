@@ -84,3 +84,12 @@ if (document.querySelector('.settings') != null) {
 if (document.querySelector('.settings_wrapper') != null) {
     tabs('.settings_header', '.settings_wrapper', '.settings_headers', 'active');
 }
+
+let targets = document.querySelectorAll('.main_section svg')
+targets.forEach(target => {
+    target.addEventListener('click', (e) => {
+        let array = Array.prototype.slice.call(target.closest('.main_section').children)
+        array.forEach(div => div.classList.toggle('hide'));
+        target.closest('.main_section').querySelector('.full_opened').classList.toggle('flex')
+    })
+})

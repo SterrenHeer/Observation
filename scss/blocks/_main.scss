@@ -73,6 +73,33 @@
         padding: 0.52vw;
         border-radius: 0.416vw;
         background: #323232;        
+        .full_opened {
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1.041vw;
+            width: 100%;
+            svg {
+                width: 1.875vw;
+                height: 1.875vw;
+                cursor: pointer;
+                &:hover {
+                    fill: rgba(255, 255, 255, 0.05);
+                }
+                &:active {
+                    path {
+                        stroke: #D4D4D4;
+                    }
+                }
+            }
+        }
+        .hide {
+            display: none;
+        }
+        .flex {
+            display: flex;
+        }
     }
     &_section.full {
         width: calc(100% - 1.666vw * 2);
