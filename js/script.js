@@ -50,11 +50,13 @@ dots.forEach((dot, index) => {
     dot.addEventListener('click', (e) => {
         dots.forEach(dot => dot.classList.remove('active'));
         dot.classList.add('active');
-        if (document.querySelector('.video .buttons') != null) {
-            if (dot.classList.contains('marker')) {
-                dots[index + len].classList.add('active')
-            } else {
-                dots[index - len].classList.add('active')
+        if (document.querySelector('.video .buttons') != null && document.querySelector('.locations_wrapper') != null) {
+            if (document.querySelector('.video .buttons') != null) {
+                if (dot.classList.contains('marker')) {
+                    dots[index + len].classList.add('active')
+                } else {
+                    dots[index - len].classList.add('active')
+                }
             }
         }
     });

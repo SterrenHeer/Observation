@@ -83,3 +83,39 @@
         }
     }
 }
+
+.video.full {
+    display: flex;
+    justify-content: space-between;
+    video {
+        width: 91.414vw;
+        height: 47.878vw;
+        border-radius: 0.808vw;
+    }
+    .top {
+        top: 1.01vw;
+        left: 5.585vw;
+        width: fit-content;
+        .labels {
+            gap: 1.212vw;
+        }
+        .label {
+            gap: 0.454vw;
+            padding: 0.505vw 0.606vw;
+            border-radius: 0.303vw;
+            img {
+                width: 1.414vw;
+            }
+        }
+    }
+    .buttons {
+        position: static;
+        flex-direction: column;
+        gap: 0.555vw;
+        button {
+            padding: 0.606vw 0.808vw;
+            width: 4.343vw;
+            border-radius: 0.404vw;
+        }
+    }
+}
