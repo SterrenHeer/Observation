@@ -88,13 +88,13 @@
     display: flex;
     justify-content: space-between;
     video {
-        width: 91.414vw;
+        width: 94.963%;
         height: 47.878vw;
         border-radius: 0.808vw;
     }
     .top {
         top: 1.01vw;
-        left: 5.585vw;
+        left: 5.858vw;
         width: fit-content;
         .labels {
             gap: 1.212vw;
@@ -112,9 +112,9 @@
         position: static;
         flex-direction: column;
         gap: 0.555vw;
+        width: 4.512%;
         button {
             padding: 0.606vw 0.808vw;
-            width: 4.343vw;
             border-radius: 0.404vw;
         }
     }

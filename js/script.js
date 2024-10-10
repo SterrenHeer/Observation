@@ -93,3 +93,11 @@ targets.forEach(target => {
         target.closest('.main_section').querySelector('.full_opened').classList.toggle('flex')
     })
 })
+
+let inputs = document.querySelectorAll('.main_login input')
+let button = document.querySelector('.main_login button')
+inputs.forEach(input => {
+    input.addEventListener('input', (e) => {
+        button.classList.add('entered')
+    })
+})

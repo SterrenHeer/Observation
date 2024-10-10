@@ -107,6 +107,74 @@
         padding: 1.562vw 1.666vw;
         border-radius: 0;      
     }
+    &_login {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+        gap: 4.166vw;
+        .inputs {
+            display: flex;
+            flex-direction: column;
+            gap: 1.25vw;
+            label {
+                display: flex;
+                flex-direction: column;
+                gap: 0.416vw;
+            }
+            input {
+                padding: 0.625vw 0.833vw;
+                width: calc(26.302vw - 0.833vw * 2);
+                border: 0.052vw solid rgba(255, 255, 255, 0.2);
+                border-radius: 0.208vw;
+                background: #282828;
+                font-weight: 400;
+                font-size: 1.041vw;
+                color: #939393;
+                outline: none;
+                &:active, &:focus {
+                    border: 0.052vw solid rgba(255, 255, 255, 0.4);
+                    background: #323232;
+                    color: #d4d4d4;
+                }
+                &::placeholder {
+                    font-weight: 400;
+                    font-size: 1.041vw;
+                    color: #939393;
+                }
+            }
+        }
+        .title_32 {
+            text-align: center;
+        }
+        button {
+            padding: 0.312vw 0.833vw 0.416vw 0.833vw;
+            width: fit-content;
+            margin: 0 auto;
+            border: 0.052vw solid rgba(255, 255, 255, 0.2);
+            border-radius: 0.312vw;
+            background: #323232;
+            opacity: 0.5;
+            text-align: center;
+            font-weight: 400;
+            font-size: 0.729vw;
+            color: #fff;
+            cursor: pointer;
+            &:hover {
+                opacity: 1;
+                border: 0.052vw solid #5d5d5d;
+            }
+        }
+        .entered {
+            background: #464646;
+            opacity: 1;
+            &:hover {
+                background: #323232;
+            }
+        }
+    }
     .for_video {
         width: 49.736%;
         height: 25.781vw;
