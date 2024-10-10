@@ -101,3 +101,15 @@ inputs.forEach(input => {
         button.classList.add('entered')
     })
 })
+
+let items = document.querySelectorAll('.settings_item')
+items.forEach(item => {
+    item.querySelectorAll('input').forEach(input => {
+        input.addEventListener('input', (e) => {
+            item.querySelector('.top button').classList.add('entered')
+        })
+    })
+    item.querySelector('button').addEventListener('click', (e) => {
+        item.querySelector('button').classList.remove('entered')
+    })
+})

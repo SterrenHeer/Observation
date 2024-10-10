@@ -60,6 +60,13 @@
                     color: #fff
                 }
             }
+            button.entered {
+                background: #464646;
+                opacity: 1;
+                &:hover {
+                    background: #323232;
+                }
+            }
         }
         .wrapper {
             display: flex;
@@ -83,7 +90,7 @@
                     color: #939393;
                     outline: none;
                     &:active, &:focus {
-                        padding: 0.208vw 0.625vw;
+                        padding: calc(0.312vw - 0.052vw) 0.625vw;
                         width: calc(21.197vw - 0.625vw * 2 - 0.052vw * 2);
                         border: 0.052vw solid rgba(255, 255, 255, 0.4);
                         color: #d4d4d4;
@@ -101,6 +108,9 @@
             .small {
                 input {
                     width: calc(5.104vw - 0.625vw * 2);
+                    &:active, &:focus {
+                        width: calc(5.104vw - 0.625vw * 2 - 0.052vw * 2);
+                    }
                 }
                 .title {
                     width: 0.937vw;
@@ -109,6 +119,9 @@
             .big {
                 input {
                     width: calc(28.489vw - 0.625vw * 2);
+                    &:active, &:focus {
+                        width: calc(28.489vw - 0.625vw * 2 - 0.052vw * 2);
+                    }
                 }
             }
         }
